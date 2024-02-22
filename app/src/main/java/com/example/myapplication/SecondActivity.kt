@@ -25,6 +25,7 @@ class SecondActivity: AppCompatActivity(){
             binding.button.text="В корзину за " + pizza.price.toString() + " KZT"
 
     }
-    fun goBack(view: View) {    finish()
+    fun backActivity(view: View) {
+        finish()
     }
 }
