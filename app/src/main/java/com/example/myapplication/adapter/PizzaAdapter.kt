@@ -58,7 +58,7 @@ class PizzaAdapter(
                 }
             }
         }
-/// inner class ViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener{
+        /// inner class ViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener{
 //        val textView: TextView = view.findViewById(R.id.gmrowtextview)
 //        init {
 //            view.setOnClickListener(this)
@@ -69,18 +69,18 @@ class PizzaAdapter(
 //                listener.onItemClick(position)
 //            }
 //        }
-    fun bind(pizza: Pizza) {
-        with(binding) {
-            ImageOfPizza.setImageResource(pizza.image)
-            title.text = pizza.title
-            description.text = pizza.description
-            price.text = pizza.price.toString()
+        fun bind(pizza: Pizza) {
+            with(binding) {
+                ImageOfPizza.setImageResource(pizza.image)
+                title.text = pizza.title
+                description.text = pizza.description
+                price.text = pizza.price.toString()
 
-            root.setOnClickListener{
-                PizzaClick(pizza)
+                root.setOnClickListener{
+                    PizzaClick(pizza)
+                }
             }
         }
-    }
 //        fun bind(movie: Movie) {
 //            with(binding) {
 //                movieImage.setImageResource(movie.imageRes)

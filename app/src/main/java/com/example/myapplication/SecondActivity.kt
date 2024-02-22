@@ -3,6 +3,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myapplication.MainActivity
 import com.example.myapplication.databinding.ActivitySecondBinding
+import android.view.View
+
+
 
 import com.example.myapplication.model.Pizza
 
@@ -21,5 +24,7 @@ class SecondActivity: AppCompatActivity(){
             binding.description.text = pizza.description
             binding.button.text="В корзину за " + pizza.price.toString() + " KZT"
 
+    }
+    fun goBack(view: View) {    finish()
     }
 }

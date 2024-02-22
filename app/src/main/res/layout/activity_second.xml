@@ -13,6 +13,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:fontFamily="sans-serif-medium">
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:onClick="goBack"
+            android:background="@drawable/img_8" />
+
 
         <ImageView
             android:id="@+id/image"

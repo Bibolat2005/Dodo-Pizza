@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/NewPizza"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        tools:srcCompat="@tools:sample/avatars"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/NewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:textSize="22sp"
+        android:text="Something about Pizza"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/NewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:textSize="18sp"
+        android:text="Some List Of Ingredients" />
+
+    <Button
+        android:id="@+id/NewPrice"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="240dp"
+        android:backgroundTint="@color/blue_dark"
+        android:textColor="@color/light_orange"
+        android:textSize="14sp"
+        android:text="From 2900 KZT" />
+</LinearLayout>
