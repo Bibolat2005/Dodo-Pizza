@@ -1,10 +1,10 @@
 package com.example.myapplication.model
 import java.util.UUID
 import java.io.Serializable
-data class Pizza(
-    val id: String = UUID.randomUUID().toString(),
-    val title: String,
-    val description: String,
-    val image: Int,
-    val price: Int
+open class Pizza(
+    open val id: String = UUID.randomUUID().toString(),
+    open val title: String,
+    open val description: String,
+    open val image: Int,
+    open val price: Int
 ): Serializable

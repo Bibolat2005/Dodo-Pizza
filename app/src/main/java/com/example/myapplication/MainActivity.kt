@@ -23,20 +23,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         searchButton = binding.Button
 
-
-        adapter()
+        adapter = PizzaAdapter(
+            PizzaClick = {
+                handlePizzaClick(it)
+            },
+             ComboClick = {
+                handleComboClick(it)
+            }
+        )
         handleSearch()
-
-    }
-
-    private fun adapter() {
-        adapter = PizzaAdapter { pizza ->
-            handlePizzaClick(pizza)
-        }
-        adapter.setData(PizzaList)
+        adapter.setData(DataSource.PizzaList)
         binding.recyclerView.adapter = adapter
 
+
     }
+
+
 
     private fun handleSearch() {
         binding.Button.setOnClickListener {
@@ -62,6 +64,11 @@ class MainActivity : AppCompatActivity() {
     private fun handlePizzaClick(pizza: Pizza) {
         val intent = Intent(this, SecondActivity::class.java)
         intent.putExtra("Dodo pizza", pizza)
+        startActivity(intent)
+    }
+    private fun handleComboClick(pizza:Pizza){
+        val intent = Intent(this, SecondActivity::class.java)
+        intent.putExtra("Combo", pizza)
         startActivity(intent)
     }
 }

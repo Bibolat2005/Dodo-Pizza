@@ -27,6 +27,12 @@ object DataSource {
             image = R.drawable.img_3,
             price = 2900
         ),
+        Combo(
+            title = "combo for 3900",
+            description = "Only one person. Small pizza, appetizer, drink and sauce. The price of the combo depends on the selected products and may be increased",
+            image = R.drawable.img_10,
+            price = 3900
+        ),
         Pizza(
             title = "Pizza Halves",
             description = "Create your own 35cm pizza from two",

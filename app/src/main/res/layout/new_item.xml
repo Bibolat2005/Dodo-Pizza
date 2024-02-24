@@ -26,7 +26,7 @@
         android:layout_marginTop="7dp"
         android:layout_marginStart="10dp"
         android:textSize="22sp"
-        android:text="Something about Pizza"
+        tools:text="Something about Pizza"
         android:textStyle="bold" />
 
     <TextView
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
         android:textSize="18sp"
-        android:text="Some List Of Ingredients" />
+        tools:text="Some List Of Ingredients" />
 
     <Button
         android:id="@+id/NewPrice"
@@ -45,5 +45,5 @@
         android:backgroundTint="@color/blue_dark"
         android:textColor="@color/light_orange"
         android:textSize="14sp"
-        android:text="From 2900 KZT" />
+        tools:text="From 2900 KZT" />
 </LinearLayout>
