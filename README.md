@@ -1,1 +1,1 @@
-<img src="C:\Users\Биболат\Pictures\Camera Roll\MainScreen.png"/>
+![Pizza](C:\Android dev\Lab1\app\src\main\res\drawable\img.png)
