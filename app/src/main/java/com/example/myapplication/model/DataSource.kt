@@ -31,7 +31,7 @@ object DataSource {
             price = 2900,
             check = false
         ),
-        Combo(
+        Pizza(
             title = "combo for 3900",
             description = "Only one person. Small pizza, appetizer, drink and sauce. The price of the combo depends on the selected products and may be increased",
             image = R.drawable.img_10,
@@ -60,7 +60,7 @@ object DataSource {
             price = 2400,
             check = false
         ),
-        Combo(
+        Pizza(
             title = "3 pizzas",
             description = "Three 30cm pizzas for every taste. Serves 5-10 people. Pizza selection is limited",
             image = R.drawable.img_11,
