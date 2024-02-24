@@ -6,5 +6,6 @@ open class Pizza(
     open val title: String,
     open val description: String,
     open val image: Int,
-    open val price: Int
+    open val price: Int,
+    open val check: Boolean
 ): Serializable

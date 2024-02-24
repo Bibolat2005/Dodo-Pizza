@@ -8,5 +8,6 @@ data class ChildPizza(
     override val title: String,
     override val description: String,
     override val image: Int,
-    override val price: Int
-): Serializable, Pizza(id,title, description, image, price)
+    override val price: Int,
+    override val check:Boolean
+): Serializable, Pizza(id,title, description, image, price,check)

@@ -5,6 +5,7 @@ import com.example.myapplication.databinding.ItemBinding
 import com.example.myapplication.databinding.NewItemBinding
 import com.example.myapplication.model.Pizza
 import androidx.recyclerview.widget.RecyclerView
+import java.util.Random
 import com.example.myapplication.model.ChildPizza
 import com.example.myapplication.model.Combo
 
@@ -65,11 +66,13 @@ class PizzaAdapter(
      * для вызова метода из ViewHolder'a
      */
     override fun getItemViewType(position: Int): Int {
-        return if (ListOfPizza[position] is Combo) {
+        val pos = ListOfPizza[position]
+        return if (pos.check) {
             VIEW_COMBO
         } else {
             VIEW_PIZZA
         }
+
     }
 
     inner class PizzaViewHolder(private val binding: ItemBinding) :
