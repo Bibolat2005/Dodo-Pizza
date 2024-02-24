@@ -60,14 +60,11 @@
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="195dp"
-                android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/orange"
                 android:textSize="20sp"
                 android:text="от 2400 тг"
-                android:textStyle="bold"
-                android:layout_gravity="center" />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
